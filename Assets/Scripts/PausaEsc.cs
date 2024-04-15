@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbrirMenu : MonoBehaviour
+public class PausaEsc : MonoBehaviour
 {
     public GameObject Panel;
-
-    public void AbrirPanel()
+    public void Update()
     {
-        if(Panel != null)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Time.timeScale = 0f;
             Panel.SetActive(true);
         }
     }
