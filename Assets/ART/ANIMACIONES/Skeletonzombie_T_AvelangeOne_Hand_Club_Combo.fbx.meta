@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: 47842be766798cf488f14bb75d52393f
+guid: bf347c855f8e91645a6af0be5f020c7b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Arrow_DIFF
-    second: {fileID: 2800000, guid: cb62f5958a387c04fa485d4e4d3a14e2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Arrow_NM
-    second: {fileID: 2800000, guid: f222a255746cdb541b08fb85ec1b1bbb, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Bow_DIFF
-    second: {fileID: 2800000, guid: d25c9144e0e5aac4ca97ef6d7b33ad88, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Bow_NM
-    second: {fileID: 2800000, guid: 16d9486911bf3944f9418e714fedadb8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Erika_Archer_Clothes_diffuse
-    second: {fileID: 2800000, guid: 1b52bba74add56f4b9ea4b1bca062d9c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Erika_Archer_Clothes_normal
-    second: {fileID: 2800000, guid: 5905a77381d7d6e449b61ee265eaff04, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FemaleFitA_Body_diffuse
-    second: {fileID: 2800000, guid: efd5462b7a42de34e8994613c8de86e6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FemaleFitA_StdNM
-    second: {fileID: 2800000, guid: e5d675d3cea1c6a468c66d561bff6b6d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FemaleFitA_eyelash_diffuse
-    second: {fileID: 2800000, guid: 355605a74a118954683ea166acfa58e7, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -69,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -138,13 +93,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
