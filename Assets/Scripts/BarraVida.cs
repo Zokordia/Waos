@@ -5,15 +5,21 @@ using UnityEngine.UI;
 
 public class BarraVida : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public float Vida = 150;
+    public float VidaMax = 150;
+    public Image Barra_Vida;
     void Update()
     {
-        
+        ActualizarInterfaz();
+    }
+
+    public void RecibirDaño(float daño)
+    {
+        Vida -= daño;
+    }
+
+    void ActualizarInterfaz()
+    {
+        Barra_Vida.fillAmount = Vida / VidaMax;
     }
 }
