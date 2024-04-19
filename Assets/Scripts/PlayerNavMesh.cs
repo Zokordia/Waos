@@ -11,6 +11,7 @@ public class PlayerNavMesh : MonoBehaviour
     private Vector3 lastPos;
     private Vector3 currentPos;
     private bool isActivated = true;
+    public int vel= 0;
 
     void Update()
     {
@@ -34,14 +35,19 @@ public class PlayerNavMesh : MonoBehaviour
             AnimationPlayer();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (vel <= 0)
         {
             agent.speed = 5;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
             agent.speed = 1;
         }
+    }
+
+    public void CambiarVelocidad()
+    {
+        
     }
 
     private void AnimationPlayer()
