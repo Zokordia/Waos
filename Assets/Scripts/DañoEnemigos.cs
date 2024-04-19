@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class DañoEnemigos : MonoBehaviour
 {
-    public float daño;
+    BarraVida Vida;
+    public int daño;
 
+    public void Start()
+    {
+      Vida = GameObject.FindWithTag("Player").GetComponent<BarraVida>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && other.GetComponent<BarraVida>())
+        if (other.tag == "Player")
         {
             other.GetComponent<BarraVida>().RecibirDaño(daño);
         }

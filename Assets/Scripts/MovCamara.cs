@@ -28,11 +28,8 @@ public class MovCamara : MonoBehaviour
         {
             isActivated = !isActivated;
         }
-        if (isActivated)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
     }
+
     void LateUpdate()
     {
         if (isActivated)

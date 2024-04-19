@@ -19,7 +19,7 @@ public class PlayerNavMesh : MonoBehaviour
             isActivated = !isActivated;
         }
 
-        if (isActivated )
+        if (isActivated)
         {
             if (Input.GetMouseButtonDown(0))
             {

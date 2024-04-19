@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class DPS : MonoBehaviour
 {
-    BarraVida DañoGenerado;
-    public int cantidad;
-    public float DañoTiempo;
-    float currentDañoTiempo;
-    void Start()
-    {
-        DañoGenerado=GameObject.FindWithTag("Player").GetComponent<BarraVida>();
-    }
+    BarraVida Vida;
+    public int daño;
+    public float Dps;
+    public float TiempoDaño;
 
+    public void Start()
+    {
+        Vida = GameObject.FindWithTag("Player").GetComponent<BarraVida>();
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            currentDañoTiempo += Time.deltaTime;
-            if(currentDañoTiempo > DañoTiempo)
+            TiempoDaño += Time.deltaTime;
+            if (TiempoDaño>Dps)
             {
-                DañoGenerado.Vida += cantidad; currentDañoTiempo = 0.0f;
+                other.GetComponent<BarraVida>().RecibirDaño(daño);
+                TiempoDaño = 0.0f;
             }
         }
     }
