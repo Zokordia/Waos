@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Coleccionable : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Puntuacion contador;
     void Start()
     {
-        
+        contador=GameObject.FindWithTag("Player").GetComponent<Puntuacion>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.tag == "Player")
+        {
+            contador.puntaje = contador.puntaje - 1;
+            Destroy(gameObject);
+        }
     }
 }

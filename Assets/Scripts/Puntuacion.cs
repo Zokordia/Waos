@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Puntuacion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int puntaje = 8;
+    public GameObject PanelGanar;
+    public GameObject PanelVida;
+
+    private void Update()
     {
-        
+        if (puntaje <= 0) 
+        {
+            PanelGanar.SetActive(true);
+            Destroy(PanelVida);
+            Destroy(gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
