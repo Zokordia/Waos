@@ -14,7 +14,7 @@ public class Chaneke : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            veloz.vel = veloz.vel - 1;
+            veloz.vel = veloz.vel + 1;
         }
     }
 
@@ -22,7 +22,7 @@ public class Chaneke : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            veloz.vel = veloz.vel + 1;
+            veloz.vel = veloz.vel - 1;
         }
     }
 }

@@ -35,13 +35,13 @@ public class PlayerNavMesh : MonoBehaviour
             AnimationPlayer();
         }
 
-        if (vel <= 0)
+        if (vel >= 1)
         {
-            agent.speed = 5;
+            agent.speed = 1;
         }
         else
         {
-            agent.speed = 1;
+            agent.speed = 2;
         }
     }
 
